@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass";
+}
+body{
+    background-color:  hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px 20px;
+    border-radius: 10px;
+    width: 280px;
+    
+}
+.image{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.image p{
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    color:  hsl(25, 97%, 53%);
+    background-color: hsl(221, 13%, 24%);
+}
+.image img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+.thank h2, p{
+    text-align: center;
+}
+.thank h2{
+    color: hsl(0, 0%, 100%);
+}
+.thank p{
+    margin-top: 10px;
+    font-size: 11px;
+    color:hsl(217, 12%, 63%);
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:480px) {
+    main{
+        height: 350px;
+    }
+    .thank p{
+        font-size: 15px;
+    }
+    .image img{
+        margin-bottom: 15px;
+    }
+    .thank h2{
+        font-size: 28px;
+        margin-top: 15px;
+    }
+    .thank p{
+        margin-top: 15px;
+        letter-spacing: 2px;
+    }
+    .image p{
+        font-size: 13px;
+    }
+    
+}
